@@ -1,0 +1,8 @@
+.DS_Store
+.Trashes
+build/
+*.xcworkspace
+!default.xcworkspace
+xcuserdata
+DerivedData
+Pods/
