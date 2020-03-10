@@ -11,8 +11,8 @@ import SwiftUI
 
 struct MoviePosterView: View {
     var posterPath: String?
-    @State var isShowingPoster = false
-    @State var isThereNoPoster = false
+    @State private var isShowingPoster = false
+    @State private var isThereNoPoster = false
     
     var body: some View {
         Group {

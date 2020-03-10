@@ -12,7 +12,7 @@ import SwiftUI
 struct MoviePosterCell: View {
     var posterPath: String?
     var title: String?
-    @State var isThereNoPoster = false
+    @State private var isThereNoPoster = false
     
     var body: some View {
         Group {

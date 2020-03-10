@@ -11,7 +11,7 @@ import SwiftUI
 struct MoviesListView: View {
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(fetchRequest: Movie.allMoviesRequest()) var movies: FetchedResults<Movie>
-    @ObservedObject var viewModel: MoviesListViewModel
+    @ObservedObject private var viewModel: MoviesListViewModel
     
     init(viewModel: MoviesListViewModel) {
       self.viewModel = viewModel
