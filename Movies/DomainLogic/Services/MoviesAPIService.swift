@@ -28,4 +28,8 @@ final class MoviesAPIService {
             .decode(type: GetMoviesResponse.self, decoder: decoder)
             .eraseToAnyPublisher()
     }
+    
+    func setFavorite(movie: Movie) -> Just<Bool> {
+        Just(!movie.isFavorite)
+    }
 }

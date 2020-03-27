@@ -30,6 +30,8 @@
 		4105F5012416867900B980C8 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4105F4FF2416867900B980C8 /* Movie+CoreDataClass.swift */; };
 		4105F5022416867900B980C8 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4105F5002416867900B980C8 /* Movie+CoreDataProperties.swift */; };
 		4105F50F2416C11A00B980C8 /* MovieTitleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4105F50E2416C11A00B980C8 /* MovieTitleHeader.swift */; };
+		4123EE9E242D5058008DE765 /* MoviePosterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4123EE9D242D5058008DE765 /* MoviePosterCellViewModel.swift */; };
+		4123EEA0242D5540008DE765 /* MovieDetailedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4123EE9F242D5540008DE765 /* MovieDetailedViewModel.swift */; };
 		D3FDDB2C466BE0602B804F8F /* Pods_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3938BC87C06FEAC29E4045F3 /* Pods_Movies.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		4105F4FF2416867900B980C8 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4105F5002416867900B980C8 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4105F50E2416C11A00B980C8 /* MovieTitleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTitleHeader.swift; sourceTree = "<group>"; };
+		4123EE9D242D5058008DE765 /* MoviePosterCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterCellViewModel.swift; sourceTree = "<group>"; };
+		4123EE9F242D5540008DE765 /* MovieDetailedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailedViewModel.swift; sourceTree = "<group>"; };
 		A5790BE7375601CCC9A73BC2 /* Pods-Movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies.debug.xcconfig"; path = "Target Support Files/Pods-Movies/Pods-Movies.debug.xcconfig"; sourceTree = "<group>"; };
 		A5C2931F19D059997A6C89E2 /* Pods-Movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies.release.xcconfig"; path = "Target Support Files/Pods-Movies/Pods-Movies.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +147,7 @@
 			children = (
 				4105F4F224157BE400B980C8 /* Views */,
 				4105F4DD241410A100B980C8 /* MovieDetailedView.swift */,
+				4123EE9F242D5540008DE765 /* MovieDetailedViewModel.swift */,
 			);
 			path = MovieDetailed;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				4105F4D62413FFAC00B980C8 /* MoviePosterCell.swift */,
+				4123EE9D242D5058008DE765 /* MoviePosterCellViewModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -379,6 +385,7 @@
 			files = (
 				4105F4DA241401B500B980C8 /* MovieDTO.swift in Sources */,
 				4105F4DE241410A100B980C8 /* MovieDetailedView.swift in Sources */,
+				4123EE9E242D5058008DE765 /* MoviePosterCellViewModel.swift in Sources */,
 				4105F4F6241582F500B980C8 /* PlayVideoButton.swift in Sources */,
 				4105F4D52413FF6800B980C8 /* MoviesListView.swift in Sources */,
 				4105F5012416867900B980C8 /* Movie+CoreDataClass.swift in Sources */,
@@ -389,6 +396,7 @@
 				4105F4F92415933000B980C8 /* MoviePosterView.swift in Sources */,
 				4105F4E22414255D00B980C8 /* MoviesAPIService.swift in Sources */,
 				4105F4FB24161DB000B980C8 /* URL+Extension.swift in Sources */,
+				4123EEA0242D5540008DE765 /* MovieDetailedViewModel.swift in Sources */,
 				4105F4BD2413FBD600B980C8 /* SceneDelegate.swift in Sources */,
 				4105F4E424143DDB00B980C8 /* GetMoviesResponse.swift in Sources */,
 				4105F4DC241404BB00B980C8 /* MoviesListViewModel.swift in Sources */,

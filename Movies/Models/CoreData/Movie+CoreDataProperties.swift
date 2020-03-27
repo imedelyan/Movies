@@ -2,7 +2,7 @@
 //  Movie+CoreDataProperties.swift
 //  Movies
 //
-//  Created by Igor Medelian on 3/9/20.
+//  Created by Igor Medelian on 3/27/20.
 //  Copyright © 2020 Medelian. All rights reserved.
 //
 //
@@ -18,11 +18,12 @@ extension Movie {
     }
 
     @NSManaged public var id: Int32
-    @NSManaged public var title: String?
     @NSManaged public var overview: String?
-    @NSManaged public var releaseDate: String?
     @NSManaged public var popularity: Double
-    @NSManaged public var voteAverage: Double
     @NSManaged public var posterPath: String?
+    @NSManaged public var releaseDate: String?
+    @NSManaged public var title: String?
+    @NSManaged public var voteAverage: Double
+    @NSManaged public var isFavorite: Bool
 
 }

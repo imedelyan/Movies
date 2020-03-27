@@ -12,6 +12,10 @@ import CoreData
 
 @objc(Movie)
 public class Movie: NSManagedObject {
+    static func fetchAll(inContext moc: NSManagedObjectContext) -> [Movie] {
+        (try? moc.fetch(Movie.allMoviesRequest())) ?? []
+    }
+    
     static func allMoviesRequest() -> NSFetchRequest<Movie> {
         let request = NSFetchRequest<Movie>(entityName: String(describing: Self.self))
         let sortDescriptor = NSSortDescriptor(keyPath: \Movie.popularity, ascending: false)
