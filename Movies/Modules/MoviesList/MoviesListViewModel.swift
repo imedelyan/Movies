@@ -44,6 +44,7 @@ final class MoviesListViewModel: ObservableObject {
         $searchString
             .dropFirst(1)
             .debounce(for: .seconds(0.5), scheduler: scheduler)
+            .receive(on: DispatchQueue.main)
             .sink(receiveValue: filterMovies(searchString:))
             .store(in: &disposables)
     }

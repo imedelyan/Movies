@@ -10,7 +10,6 @@ import Foundation
 import SwiftUI
 
 struct MoviesListView: View {
-    @Environment(\.managedObjectContext) var moc
     @ObservedObject private var viewModel: MoviesListViewModel
     
     init(viewModel: MoviesListViewModel) {

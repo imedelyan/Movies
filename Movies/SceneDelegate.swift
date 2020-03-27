@@ -25,7 +25,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let moviesAPIService = MoviesAPIService()
         let viewModel = MoviesListViewModel(moviesAPIService: moviesAPIService, moc: context)
         let contentView = MoviesListView(viewModel: viewModel)
-            .environment(\.managedObjectContext, context)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
